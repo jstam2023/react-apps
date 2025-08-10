@@ -1,11 +1,14 @@
 const JsLogo = () => {
     return (
         <>
-            <img
-                className="my-4 h-16"
-                src="/public/js.png"
-                alt="JsLogo"
-            />
+            <a href="/">
+                <img
+                    className="h-18"
+                    src="/public/js.png"
+                    alt="JsLogo"
+                />
+            </a>
+
         </>
     )
 }
