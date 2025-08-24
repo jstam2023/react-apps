@@ -27,6 +27,8 @@ const AppsPage= () => {
                 <Link to="/OnlineStatus" className="block text-white hover:underline hover:underline-offset-4 hover:text-red-400 pr-8">Connectivity</Link>
                 <Link to="/CountDownTimer" className="block text-white hover:underline hover:underline-offset-4 hover:text-red-400 pr-8">CountDownTimer</Link>
                 <Link to="/Timer" className="block text-white hover:underline hover:underline-offset-4 hover:text-red-400 pr-8">Timer</Link>
+                <Link to="/DoubleTimer" className="block text-white hover:underline hover:underline-offset-4 hover:text-red-400 pr-8">DoubleTimer</Link>
+
             </div>
             <div className="bg-gray-600 rounded-lg py-2 px-2 w-38">
                 <h1 className="text-blue-300 text-center">Apps:</h1>

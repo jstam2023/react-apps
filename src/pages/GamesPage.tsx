@@ -1,6 +1,6 @@
 import {useEffect} from "react";
 import {Link} from "react-router";
-import GuessNumberPage from "./GuessNumberPage.tsx";
+// import GuessNumberPage from "./GuessNumberPage.tsx";
 
 const GamesPage = () => {
 

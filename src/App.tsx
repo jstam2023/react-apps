@@ -12,6 +12,7 @@ import AppsPage from "./pages/AppsPage.tsx";
 import GamesPage from "./pages/GamesPage.tsx";
 import GuessNumberPage from "./pages/GuessNumberPage.tsx";
 import TicTacToePage from "./pages/TicTacToePage.tsx";
+import DoubleTimer from "./pages/DoubleTimer.tsx";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
                       <Route path="/GamesPage" element={<GamesPage/>}/>
                       <Route path="/GuessNumberPage" element={<GuessNumberPage/>}/>
                       <Route path="/TicTacToePage" element={<TicTacToePage/>}/>
+                      <Route path="/DoubleTimer" element={<DoubleTimer/>}/>
 
                   </Routes>
               </Layout>

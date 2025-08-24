@@ -30,29 +30,33 @@ const TimerPage = () => {
                 <p>A simple Timer App made with Vite and React.</p>
             </div>
 
-            <div className="text-center text-2xl py-4">
-                <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
-                <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
-                <span>{("0" + Math.floor((time / 10) % 100)).slice(-2)}</span>
-            </div>
-            <div className="text-center py-1">
-                {running ? (
+            <div>
+                <div className="text-center text-2xl py-4">
+                    <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
+                    <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
+                    <span>{("0" + Math.floor((time / 10) % 100)).slice(-2)}</span>
+                </div>
+                <div className="text-center py-1">
+                    {running ? (
+                        <button
+                            onClick={()=> {setRunning(false)}}
+                            className="bg-black text-white border max-w-14 rounded px-2 mr-2 hover:bg-black hover:text-blue-300"
+                        >Stop</button>
+                    ) : (
+                        <button
+                            onClick={()=> {setRunning(true)}}
+                            className="max-w-14 bg-green-400 border rounded px-2 mr-2 hover:bg-blue-300"
+                        >Start</button>
+                    )
+                    }
                     <button
-                        onClick={()=> {setRunning(false)}}
-                        className="bg-black text-white border max-w-14 rounded px-2 mr-2 hover:bg-black hover:text-blue-300"
-                    >Stop</button>
-                ) : (
-                    <button
-                        onClick={()=> {setRunning(true)}}
-                        className="max-w-14 bg-green-400 border rounded px-2 mr-2 hover:bg-blue-300"
-                    >Start</button>
-                )
-                }
-                <button
-                    onClick={()=> {setTime(0)}}
-                    className="bg-green-400 border max-w-14 rounded px-2 mr-2 hover:text-white hover:bg-red-500"
-                >Reset</button>
+                        onClick={()=> {setTime(0)}}
+                        className="bg-green-400 border max-w-14 rounded px-2 mr-2 hover:text-white hover:bg-red-500"
+                    >Reset</button>
+                </div>
             </div>
+
+
         </>
     )
 }
